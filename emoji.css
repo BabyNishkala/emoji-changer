@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111111;
+    color: #fff;
+}
+.heading{
+    padding-bottom: 50px;
+    font-size: 2rem;
+}
+#emoji{
+    padding: 15px;
+    border: none;
+    background: #ccc;
+    border-radius: 10px;
+    font-size: 5rem;
+    filter: grayscale();
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+#emoji:hover{
+    transform: scale(1.5);
+    filter: grayscale(0);
+    background: #fff;
+}
